@@ -2,7 +2,7 @@ package kyndryl;
 
 import java.util.*;
 
-public class Interview {
+public class TwoNumbersSumSearch {
     /**
      * We are looking for two songs with different lengths.
      * Their total length is set by 'targetLength' attribute
@@ -16,7 +16,7 @@ public class Interview {
         int[] songLengths = new int[] { 40, 31, 22, 15, 6, 72, 29, 21, 20};
 
         List<int[]> resultPairs = findSongs(songLengths, targetLength);
-        resultPairs.forEach(pair -> System.out.println(pair[0] + "," + pair[1]));
+        resultPairs.forEach(pair -> System.out.println(Arrays.toString(pair)));
     }
 
     public static List<int[]> findSongs(int[] lengths, int targetLength) {
