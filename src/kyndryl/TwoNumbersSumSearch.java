@@ -13,7 +13,7 @@ public class TwoNumbersSumSearch {
 
     public static void main(String[] args) {
         int targetLength = 60;
-        int[] songLengths = new int[] { 40, 31, 22, 15, 6, 72, 29, 21, 20};
+        int[] songLengths = { 40, 31, 22, 15, 6, 72, 29, 21, 20};
 
         List<int[]> resultPairs = findSongs(songLengths, targetLength);
         resultPairs.forEach(pair -> System.out.println(Arrays.toString(pair)));
