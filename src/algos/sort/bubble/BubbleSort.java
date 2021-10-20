@@ -1,8 +1,8 @@
-package algos.sort;
+package algos.sort.bubble;
 
 import java.util.Arrays;
 
-public class Selection {
+public class BubbleSort {
 
     public static void main(String[] args) {
         int[] array = {4, 5, 2, 8, 9, 3, 6, 1};
@@ -10,7 +10,7 @@ public class Selection {
     }
 
     /**
-     * Sorted part = LEFT, unsorted = RIGHT.<br/>
+     * Sorted part = END, unsorted = LEFT.<br/>
      * Move current item to look for smaller number.<br/>
      * Update current minimum index.<br/>
      * Swap.
