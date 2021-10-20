@@ -1,9 +1,9 @@
-package hackerrank;
+package hackerrank.fibonacci;
 
 public class FibonacciMemoization {
 
     public static void main(String[] args) {
-        int[] memo = new int[] {0, 0, 0, 0, 0, 0};
+        int[] memo = {0, 0, 0, 0, 0, 0};
         System.out.println(fibonacci(6, memo));
     }
 

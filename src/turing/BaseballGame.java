@@ -1,4 +1,4 @@
-package practice;
+package turing;
 
 import static java.lang.Integer.parseInt;
 

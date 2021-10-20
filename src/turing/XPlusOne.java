@@ -1,6 +1,4 @@
-package practice;
-
-import static java.lang.Integer.parseInt;
+package turing;
 
 import java.util.*;
 
@@ -16,13 +14,7 @@ public class XPlusOne {
             map.merge(current, 1, Integer::sum);
         }
 
-        //Arrays.sort(ops);
-
         int previous = 0;
-//        for (int k : map.keySet()) {
-//
-//        }
-
         int mainCounter = 0;
         int sameNumberCounter = 1;
 
