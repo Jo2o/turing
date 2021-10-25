@@ -17,7 +17,7 @@ public class MergeSort {
 
     private static int[] mergeSort(int[] array) {
         int length = array.length;
-        if (length <= 1) {
+        if (length <= 1) {                                  // Base condition
             return array;
         }
         int middleIdx = length / 2;
@@ -29,10 +29,10 @@ public class MergeSort {
 
         int[] rightHalf = new int[length - middleIdx];
         for (int i = middleIdx; i < length; i++) {
-            rightHalf[i - middleIdx] = array[i];
+            rightHalf[i - middleIdx] = array[i];           // Beware of correct indexes for right half
         }
 
-        leftHalf = mergeSort(leftHalf);
+        leftHalf = mergeSort(leftHalf);                     // Divide left and right
         rightHalf = mergeSort(rightHalf);
 
         return merge(leftHalf, rightHalf);
@@ -47,8 +47,8 @@ public class MergeSort {
         int j = 0;
         int k = 0;
 
-        while ((i < array1Length) && (j < array2Length)) {
-            if (array1[i] < array2[j]) {
+        while ((i < array1Length) && (j < array2Length)) {  // They are pre-ordered therefore I can do these k++, i++, j++ :)
+            if (array1[i] < array2[j]) {                    // The secret isthat the other one "WAITS" until it's less
                 result[k++] = array1[i++];
             } else {
                 result[k++] = array2[j++];
