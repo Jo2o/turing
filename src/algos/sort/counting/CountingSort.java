@@ -21,7 +21,7 @@ public class CountingSort {
         }
         // occurrences [3][0][3][1]
         int idx = 0; // idx of the result array
-        for (int i = 0; i < occurrences.length; i++) {
+        for (int i = 0; i < occurrences.length; i++) { // i is actual number
             while (occurrences[i] > 0) { // decrease occurrences by one by adding the number to the next index in the result array
                 result[idx++] = i;
                 occurrences[i]--;
